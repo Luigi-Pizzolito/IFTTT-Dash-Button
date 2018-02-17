@@ -1,7 +1,7 @@
 # IFTTT Dash Button (in development)
 Push a button, do a GET Request. Save battery to last ages.
 
-- [IFTTT Dash Button](#ifttt-dash-button)
+- [ESP-12E Weather Station (in development)](#esp-12e-weather-station-in-development)
     - [Planned Features (And Progress)](#planned-features-and-progress)
         - [GET Requests](#get-requests)
             - [Triggering Actions](#triggering-actions)
@@ -15,8 +15,10 @@ Push a button, do a GET Request. Save battery to last ages.
     - [X] Trigger Action
     - [ ] Monitor Battery
  - [X] Power Saving
- - [ ] OTA / WebUpdate
+ - [ ] OTA / WebUpdate / Configuration
 
+## About
+Inspired by Bitluni's Lab. This is a tiny dashbutton. That connects to IFTTT, and saves battery.
 
 ### GET Requests
 When the button is pushed a GET request is made to a webpage.
@@ -28,7 +30,7 @@ When a request is made, the button will also pass on the battery voltage. This w
 ### Power Saving
 To keep the button down to a small size, a small battery needs to be used. To maintain a decent battery life, the ESP is almost always in deep-sleep mode. Pressing the button resets the ESP. The ESP reboots, makes a GET request and goes back to deep-sleep.
 
-### OTA / WebUpdate (in progress)
+### OTA / WebUpdate / Configuration(in progress)
 By implementing Over-The-Air programming, you wont need to take apart your button to re-program the url or action.
 
 ## Useful Links and References
