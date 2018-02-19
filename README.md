@@ -16,7 +16,7 @@ Push a button, do a GET Request. Save battery to last ages.
     - [X] Monitor Battery
  - [X] Power Saving
  - [X] Reconfigurable
- TO DO: Add pictures of finished project, make instructable
+ - TO DO: Add pictures of finished project, make instructable
 
 ## About
 Inspired by Bitluni's Lab. This is a tiny dashbutton. That connects to IFTTT, and saves battery. The code has been extended to make it easy to use and universally configurable without the need for re-programming. Just flash the `.bin` file from the releases page and the SPIFFS data, enter configuration mode, set it up and you are ready to go.
@@ -27,7 +27,7 @@ When the button is pushed a GET request is made to a webpage.
 Depending on the webpage, many different actions can be triggered by the button. I suggest hooking it up to the IFTTT Maker WebHooks.
 #### Monitoring Battery
 When a request is made, if the setting is set, the button will also pass on the battery voltage with your web request. This way you can monitor the battery's charge. The server will recieve:
- > http://yoururl.com/yourrequest/_?batt=_**VCC_Voltage**
+ > yoururl.com/yourrequest/_?batt=_**VCC_Voltage**
 
 ### Power Saving
 To keep the button down to a small size, a small battery needs to be used. To maintain a decent battery life, the ESP is almost always in deep-sleep mode. Pressing the button resets the ESP. The ESP reboots, makes a GET request and goes back to deep-sleep.
