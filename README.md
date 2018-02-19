@@ -10,28 +10,34 @@ Push a button, do a GET Request. Save battery to last ages.
         - [OTA / WebUpdate (in progress)](#ota-webupdate-in-progress)
     - [Useful Links and References](#useful-links-and-references)
 
-## Planned Features (And Progress)
+## Features
  - [X] GET Requests
     - [X] Trigger Action
-    - [ ] Monitor Battery
+    - [X] Monitor Battery
  - [X] Power Saving
- - [ ] OTA / WebUpdate / Configuration
+ - [X] Reconfigurable
+ TO DO: Add pictures of finished project, make instructable
 
 ## About
-Inspired by Bitluni's Lab. This is a tiny dashbutton. That connects to IFTTT, and saves battery.
+Inspired by Bitluni's Lab. This is a tiny dashbutton. That connects to IFTTT, and saves battery. The code has been extended to make it easy to use and universally configurable without the need for re-programming. Just flash the `.bin` file from the releases page and the SPIFFS data, enter configuration mode, set it up and you are ready to go.
 
 ### GET Requests
 When the button is pushed a GET request is made to a webpage.
 #### Triggering Actions
 Depending on the webpage, many different actions can be triggered by the button. I suggest hooking it up to the IFTTT Maker WebHooks.
-#### Monitoring Battery (in progress)
-When a request is made, the button will also pass on the battery voltage. This way you can monitor the battery's charge.
+#### Monitoring Battery
+When a request is made, if the setting is set, the button will also pass on the battery voltage with your web request. This way you can monitor the battery's charge. The server will recieve:
+ > http://yoururl.com/yourrequest/_?batt=_**VCC_Voltage**
 
 ### Power Saving
 To keep the button down to a small size, a small battery needs to be used. To maintain a decent battery life, the ESP is almost always in deep-sleep mode. Pressing the button resets the ESP. The ESP reboots, makes a GET request and goes back to deep-sleep.
 
-### OTA / WebUpdate / Configuration(in progress)
-By implementing Over-The-Air programming, you wont need to take apart your button to re-program the url or action.
+### Configuration
+You dont need to take apart your button to re-program the url or action. If you connect `GPIO_03[RX]` to `GND` during startup the button will enter configuration mode. Then you can
+1. Connect to 'ESP_Button' WiFi Access Point, with the password 'wifibutton'
+2. Visit http://192.168.4.1 to open the configuration page
+3. After seeting your values, click on the 'Save' button then the 'Restart'
+![Configuration Interface](https://gangster45671.github.io/IFTTT-Dash-Button/pictures/Config.png)
 
 ## Useful Links and References
 - Similliar Projects
