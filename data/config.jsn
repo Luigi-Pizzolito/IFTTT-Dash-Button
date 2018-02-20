@@ -1,9 +1,11 @@
 {
-  "ssid" : "SSID Here",
-  "pass" : "Password Here",
-  "host" : "examplewebsite.com",
-  "uri" : "/makemyrequest/",
-  "wc_p" : 10,
-  "gr_p" : 10,
-  "s_vcc" : false
+  "ssid": "SSID Here",
+  "pass": "Password Here",
+  "host": "examplewebsite.com",
+  "is_ip": false,
+  "uri": "/makemyrequest/",
+  "wc_p": 10,
+  "gr_p": 10,
+  "s_vcc": false,
+  "vcc_p": "batt"
 }
