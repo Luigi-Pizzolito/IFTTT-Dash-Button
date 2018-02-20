@@ -1,6 +1,6 @@
 # IFTTT Dash Button (in development)
 Push a button, do a GET Request. Save battery to last ages.
-More documentation on [Intructables](https://www.instructables.com/id/Tiny-ESP8266-Dash-Button-Re-Configurable/)
+More documentation on [Instructables](https://www.instructables.com/id/Tiny-ESP8266-Dash-Button-Re-Configurable/).
 
 - [ESP-12E Weather Station (in development)](#esp-12e-weather-station-in-development)
     - [Planned Features (And Progress)](#planned-features-and-progress)
