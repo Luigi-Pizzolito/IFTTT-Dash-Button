@@ -16,10 +16,10 @@ Push a button, do a GET Request. Save battery to last ages.
     - [X] Monitor Battery
  - [X] Power Saving
  - [X] Reconfigurable
- - TO DO: Add pictures of finished project, make instructable
 
 ## About
 Inspired by Bitluni's Lab. This is a tiny dashbutton. That connects to IFTTT, and saves battery. The code has been extended to make it easy to use and universally configurable without the need for re-programming. Just flash the `.bin` file from the releases page and the SPIFFS data, enter configuration mode, set it up and you are ready to go.
+![Built Button](https://raw.githubusercontent.com/Gangster45671/Gangster45671.github.io/master/IFTTT-Dash-Button/pictures/20180220_163702.jpg)
 
 ### GET Requests
 When the button is pushed a GET request is made to a webpage.
