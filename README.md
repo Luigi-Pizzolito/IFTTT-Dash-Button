@@ -27,7 +27,7 @@ When the button is pushed a GET request is made to a webpage.
 Depending on the webpage, many different actions can be triggered by the button. I suggest hooking it up to the IFTTT Maker WebHooks.
 #### Monitoring Battery
 When a request is made, if the setting is set, the button will also pass on the battery voltage with your web request. This way you can monitor the battery's charge. The server will recieve:
- > yoururl.com/yourrequest/_?batt=_**VCC_Voltage**
+ > yoururl.com/yourrequest/_?VCC_Param.=_**VCC_Voltage**
 
 ### Power Saving
 To keep the button down to a small size, a small battery needs to be used. To maintain a decent battery life, the ESP is almost always in deep-sleep mode. Pressing the button resets the ESP. The ESP reboots, makes a GET request and goes back to deep-sleep.
