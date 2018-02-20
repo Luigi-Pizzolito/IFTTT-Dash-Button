@@ -1,5 +1,6 @@
 # IFTTT Dash Button (in development)
 Push a button, do a GET Request. Save battery to last ages.
+More documentation on [Intructables](https://www.instructables.com/id/Tiny-ESP8266-Dash-Button-Re-Configurable/)
 
 - [ESP-12E Weather Station (in development)](#esp-12e-weather-station-in-development)
     - [Planned Features (And Progress)](#planned-features-and-progress)
@@ -36,7 +37,7 @@ To keep the button down to a small size, a small battery needs to be used. To ma
 You dont need to take apart your button to re-program the url or action. If you connect `GPIO_03[RX]` to `GND` during startup the button will enter configuration mode. Then you can
 1. Connect to 'ESP_Button' WiFi Access Point, with the password 'wifibutton'
 2. Visit http://192.168.4.1 to open the configuration page
-3. After seeting your values, click on the 'Save' button then the 'Restart'
+3. After setting your values, click on the 'Save' button then the 'Restart'
 ![Configuration Interface](https://gangster45671.github.io/IFTTT-Dash-Button/pictures/Config.png)
 
 ## Useful Links and References
