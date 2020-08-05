@@ -20,7 +20,7 @@ More documentation on [Instructables](https://www.instructables.com/id/Tiny-ESP8
 
 ## About
 Inspired by Bitluni's Lab. This is a tiny dashbutton. That connects to IFTTT, and saves battery. The code has been extended to make it easy to use and universally configurable without the need for re-programming. Just flash the `.bin` file from the releases page and the SPIFFS data, enter configuration mode, set it up and you are ready to go.
-![Built Button](https://gangster45671.github.io/IFTTT-Dash-Button/pictures/20180220_163702.jpg)
+![Built Button](https://luigi-pizzolito.github.io/Gangster45671.github.io/IFTTT-Dash-Button/pictures/20180220_163702.jpg)
 
 ### GET Requests
 When the button is pushed a GET request is made to a webpage.
@@ -38,7 +38,7 @@ You dont need to take apart your button to re-program the url or action. If you 
 1. Connect to 'ESP_Button' WiFi Access Point, with the password 'wifibutton'
 2. Visit http://192.168.4.1 to open the configuration page
 3. After setting your values, click on the 'Save' button then the 'Restart'
-![Configuration Interface](https://gangster45671.github.io/IFTTT-Dash-Button/pictures/Config.png)
+![Configuration Interface](https://luigi-pizzolito.github.io/Gangster45671.github.io/IFTTT-Dash-Button/pictures/Config.png)
 
 ## Useful Links and References
 - Similliar Projects
