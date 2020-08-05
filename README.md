@@ -1,4 +1,4 @@
-# IFTTT Dash Button (in development)
+# IFTTT Dash Button
 Push a button, do a GET Request. Save battery to last ages.
 More documentation on [Instructables](https://www.instructables.com/id/Tiny-ESP8266-Dash-Button-Re-Configurable/).
 
