@@ -209,7 +209,13 @@ void loop()
     //create the URI for the request
     if (s_vcc)
     {
-      url += "?";
+      if (url.indexOf("?") > 0) {
+        // if the configured url already has a querystring, append an ampersand
+        url += "&";
+      } else {
+        // otherwise start the new querystring
+        url += "?";
+      }
       url += vcc_parm;
       url += "=";
       uint32_t getVcc = ESP.getVcc();
